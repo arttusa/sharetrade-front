@@ -9,27 +9,27 @@ function Content() {
         // Example data for testing
         const post_list = [
             {
-                username: "Matti",
+                "username": "Matti",
                 description: "One month consolidation",
                 chart: "",
-                votes: 0
+                votes: 20
             },
             {
                 username: "Mikko",
-                description: "One month consolidation",
+                description: "Two month consolidation",
                 chart: "",
-                votes: 0
+                votes: 11
             },
             {
                 username: "Pekka",
-                description: "One month consolidation",
+                description: "Three month consolidation",
                 chart: "",
-                votes: 0
+                votes: 10
             }
         ]
         return (
             <div>
-                {post_list.map(postl => <Post key={postl.username} post={postl} />)}
+                {post_list.map(post => <Post key={post.username} post={post} />)}
             </div>
         )
     }
@@ -40,15 +40,15 @@ function Content() {
                 <Grid item xs={2} style={{'textAlign':'left'}}>
                     <Grid container>
                         <Grid item xs={6}>
-                            <Typography> 10 </Typography>
+                            <Typography> {post.post.votes} </Typography>
                         </Grid>
                         <Grid item xs={6} >
-                            <Typography> Tom </Typography>
+                            <Typography> {post.post.username} </Typography>
                         </Grid>
                     </Grid>
                     <Grid>
                     <Typography> Description: </Typography>
-                    <Typography> One month consolidation </Typography>
+                    <Typography> {post.post.description} </Typography>
                     </Grid>
                 </Grid>
                 <Grid item xs={10} style={{'textAlign':'left'}}>
