@@ -21,7 +21,7 @@ function Fileupload() {
 
     console.log(selectedFile);
 
-    //axios.post("api/uploadfile", formData);
+    axios.post("http://127.0.0.1:5000/uploadpost", form);
   };
 
   
