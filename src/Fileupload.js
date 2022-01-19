@@ -39,9 +39,6 @@ function Fileupload() {
 
   return (
     <div>
-      <h1>
-        File Upload
-      </h1>
       <div>
         <input type="file" onChange={onFileChange} />
         <button onClick={onFileUpload}>
