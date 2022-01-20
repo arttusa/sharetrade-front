@@ -1,0 +1,30 @@
+.container {
+    background-color: rgb(38, 41, 39);
+    color: white !important; /* Somehow child containers override without this important tag */
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+}
+
+.container:nth-child(odd) {
+    background-color: rgb(38, 41, 39);
+}
+
+.container:nth-child(even) {
+    background-color: rgb(17, 19, 18);
+}
+
+
+img {
+    width: 40%;
+}
+
+.voting-container {
+    text-align: center;
+}
+
+.post-info-container {
+    margin-left: 6%;
+}
+
+
+
